@@ -20,6 +20,8 @@ ADD . /app
 
 RUN bundle exec rake assets:precompile
 
+RUN chmod +x /app/bin/*
+
 RUN mkdir -p tmp/pids
 
 EXPOSE 3000
