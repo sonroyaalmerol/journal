@@ -16,7 +16,7 @@ ADD Gemfile Gemfile.lock /app/
 RUN bundle update --bundler
 RUN bundle install
 
-ADD . .
+ADD . /app
 
 RUN bundle exec rake assets:precompile
 
